@@ -1,0 +1,17 @@
+{% ckan_extends %}
+
+{% block meta %}
+{{ super() }}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="" />
+<meta property="og:title" content="Karudata" />
+<meta property="og:description"
+      content="" />
+<meta property="og:url" content="" />
+{% endblock %}
+
+{% block styles %}
+{{ super() }}
+{% asset 'karudata/karudata-bootstrap-css' %}
+{% asset 'karudata/karudata-css-theme' %}
+{% endblock %}

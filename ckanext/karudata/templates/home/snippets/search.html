@@ -1,0 +1,19 @@
+{% set tags = h.get_facet_items_dict('tags', limit=3) %}
+{% set placeholder = _('Chercher un jeu de données') %}
+
+<div class="module module-search module-narrow module-shallow">
+    <form class="module-content search-form" method="get" action="{% url_for controller='dataset', action='search' %}">
+        <img src="/images/logos/KaruData.png" alt="Logo" class="responsive-logo"/>
+        <h2 class="heading highlighted">KaruData</h2>
+        <h4>Platforme de donnée ouvertes</h4>
+        <h5>QUELLES DONNÉES CHERCHEZ VOUS PARMI LES 127 JEUX DE DONNÉE DISPONIBLES</h5>
+        <div class="search-input control-group search-giant">
+            <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="{{ placeholder }}" />
+            <button type="submit">
+                <!-- <i class="icon-search"></i> -->
+                <img src="/icons/search.svg" alt="Search" class="search-icon" />
+                <span>{{ _('Search') }}</span>
+            </button>
+        </div>
+    </form>
+</div>

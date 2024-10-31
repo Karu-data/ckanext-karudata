@@ -1,0 +1,29 @@
+# karudata-js:
+#   filter: rjsmin
+#   output: ckanext-karudata/%(version)s-karudata.js
+#   contents:
+#     - js/karudata.js
+#   extra:
+#     preload:
+#       - base/main
+
+# karudata-css:
+#   filter: cssrewrite
+#   output: ckanext-karudata/%(version)s-karudata.css
+#   contents:
+#     - css/karudata.css
+
+karudata-bootstrap-js:
+  output: ckanext-karudata/karudata_bootstrap.js
+  contents:
+    - js/bootstrap.min.js
+
+karudata-bootstrap-css:
+  output: ckanext-karudata/karudata.css
+  contents:
+    - css/bootstrap-responsive.min.css
+
+karudata-css-theme:
+  output: ckanext-karudata/karudata-theme.css
+  contents:
+    - css/karudata_theme.css
